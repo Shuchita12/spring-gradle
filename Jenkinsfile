@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'gradle build'
+        sh '/usr/local/Cellar/gradle/6.7.1/bin/gradle build'
       }
     }
 
     stage('test') {
       steps {
-        sh 'gradle test'
+        sh '/usr/local/Cellar/gradle/6.7.1/bin/gradle test'
       }
     }
 
